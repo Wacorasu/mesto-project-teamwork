@@ -69,9 +69,9 @@ const validationConfig = {
 };
 
 const apiRequestConfig = {
-  url: "https://mesto.nomoreparties.co/v1/plus-cohort-13",
+  url: process.env.BASE_URL,
   headers: {
-    authorization: "d1d14902-c78a-4d00-aa9d-9b64f78ed110",
+    authorization: process.env.AUTHORIZATION_KEY,
     "Content-type": "application/json"
   },
 };
